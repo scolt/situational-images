@@ -2,3 +2,4 @@ node_modules
 public/bundle.js
 public/styles.css
 public/packs
+npm-debug.log
