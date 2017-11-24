@@ -1,0 +1,77 @@
+.masonry {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+  
+.masonry > img {
+    display: block;
+    width: 33.3333%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.not-found {
+    text-align: center;
+    font-family: Arial;
+    font-size: 1.1em;
+}
+
+.tags {
+    max-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tags a {
+    transition: all ease-out .5s;
+    padding: 7px;
+    margin: 4px;
+    background: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid transparent;
+    font-family: Arial;
+}
+
+.tags a:hover {
+    border-color: #bbb;
+    background: #e0e0e0;
+}
+
+textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.panel {
+    transition: width ease-out .3s;
+    white-space: nowrap;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 5px;
+    font-family: Arial;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    cursor: default;
+}
+
+.panel.active {
+    width: 220px;
+    height: 40px;
+}

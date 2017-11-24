@@ -1,0 +1,41 @@
+ul.home {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home li {
+    width: 25%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.home li img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.home li h2 {
+    transition: all ease-out .5s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: 'Exo 2';
+    text-align: center;
+    top: 100%;
+    background: rgba(0,0,0, 0)
+    
+}
+
+.home li:hover h2 {
+    top: 50%;
+    background: rgba(0,0,0, 0.7)
+}
