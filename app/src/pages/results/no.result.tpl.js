@@ -12,6 +12,7 @@ export default (data) => {
     list += '</div>';
 
     return `
+        <a href="#/" class="go-home"><span></span></a>
         <h1>${data.query ? message : 'All results'} shown</h1>
         ${notFound}
         <div class="not-found">You can try to find something below:</div>

@@ -4,7 +4,7 @@
     position: relative;
     font-size: 0;
 }
-  
+
 .masonry > img {
     display: block;
     width: 33.3333%;
@@ -74,4 +74,51 @@ textarea {
 .panel.active {
     width: 220px;
     height: 40px;
+}
+
+.go-home span {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border: 3px solid #888;
+    border-top: 0;
+    display: block;
+    margin: 40px 30px 20px;
+}
+
+.go-home span:before,
+.go-home span:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -18px;
+    top: -10px
+}
+
+.go-home span:after {
+    transform: rotate(45deg);
+    left: 2px;
+}
+
+.go-home {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.go-home:after {
+    content: 'HOME';
+    position: absolute;
+    font-family: Arial;
+    color: #000;
+    font-weight: bold;
+    font-size: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-30deg);
 }

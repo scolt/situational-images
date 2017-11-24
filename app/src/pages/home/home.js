@@ -20,7 +20,7 @@ export default class Home extends Page {
     }
 
     viewAfterRender() {
-        const lis = this.container.querySelectorAll('li');
+        const lis = Array.prototype.slice.call(this.container.querySelectorAll('li'));
         const handler = (e) => this.openSearchWithin(e.currentTarget.id);
         lis.forEach((li) => {
             this.bindEvent('click', li, handler);

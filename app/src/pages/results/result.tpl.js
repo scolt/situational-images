@@ -12,6 +12,7 @@ export default (data) => {
     const message = `Result for "${data.query}"`;
 
     return `
+        <a href="#/" class="go-home"><span></span></a>
         <h1>${data.query ? message : 'All results'} shown</h1>
         ${list}
         <textarea class="copy-area"></textarea>

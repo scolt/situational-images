@@ -14,7 +14,6 @@ export default class Search extends Page {
         const { id, query } = stateService.getParams();
         packService.getImagesByTag(id, query).then((images) => {
             this.viewData = {id, query, images};
-            
             if (images.length) {
                 this.template = result;
                 this.render();
@@ -28,7 +27,7 @@ export default class Search extends Page {
     }
 
     viewAfterRender() {
-        const lis = this.container.querySelectorAll('img');
+        const lis = Array.prototype.slice.call(this.container.querySelectorAll('img'));
         const handler = (e) => this.openCopyWindow(e.currentTarget.src);
         lis.forEach((li) => {
             this.bindEvent('click', li, handler);
