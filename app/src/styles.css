@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
@@ -15,4 +16,5 @@ h2 {
 h1 {
     font-family: 'Exo 2';
     text-align: center;
+    padding: 0 90px;
 }

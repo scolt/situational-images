@@ -20,6 +20,7 @@
 }
 
 .search-bar input {
+    font-family: Arial;
     padding: 10px;
     width: 80%;
     border: 0;

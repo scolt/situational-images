@@ -1,6 +1,6 @@
 ul.home {
     list-style: none;
-    padding: 0;
+    padding: 0 10px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +9,7 @@ ul.home {
 
 .home li {
     width: 25%;
+    padding: 10px;
     max-height: 300px;
     overflow: hidden;
     position: relative;
@@ -24,13 +25,14 @@ ul.home {
     transition: all ease-out .5s;
     position: absolute;
     height: 100%;
-    width: 100%;
+    left: 10px;
+    right: 10px;
     padding: 20px;
     line-height: 1.5;
     color: #fff;
-    font-family: 'Exo 2';
     text-align: center;
     top: 100%;
+    font-weight: 300;
     background: rgba(0,0,0, 0)
     
 }
@@ -38,4 +40,24 @@ ul.home {
 .home li:hover h2 {
     top: 50%;
     background: rgba(0,0,0, 0.7)
+}
+
+@media screen and (max-width: 768px) {
+    .home li {
+        width: 50%;
+    }
+
+    .home li h2 {
+        display: block;
+        font-size: 25px;
+        top: 50%;
+        background: rgba(0,0,0, 0.7);
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home li {
+        width: 100%;
+    }
 }

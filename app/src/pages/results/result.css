@@ -122,3 +122,16 @@ textarea {
     left: 50%;
     transform: translateX(-50%) rotate(-30deg);
 }
+
+@media screen and (max-width: 768px) {
+    .masonry > img {
+        display: block;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .masonry > img {
+        width: 100%;
+    }
+}
